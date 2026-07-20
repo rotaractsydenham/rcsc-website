@@ -19,9 +19,9 @@ export default function Hero() {
         </h1>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300 md:text-xl">
-          Empowering young leaders through Service,
-          Fellowship, Professional Development,
-          and Community Impact.
+          Lead.
+          Develop.
+          Serve.
         </p>
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
