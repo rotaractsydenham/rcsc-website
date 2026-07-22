@@ -1,6 +1,12 @@
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[90vh] items-center justify-center overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    
+        <img
+        src="/images/hero/hero.jpg"
+        alt="Rotaract Club of Sydenham College"
+        className="absolute inset-0 h-full w-full object-cover"
+        />
 
       {/* Background Overlay */}
       <div className="absolute inset-0 bg-black/40" />
