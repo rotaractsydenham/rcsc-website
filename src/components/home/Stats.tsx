@@ -1,5 +1,6 @@
 "use client";
 
+import { statistics } from "@/content/statistics";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { Users, HeartHandshake, Calendar, FolderKanban } from "lucide-react";
@@ -49,7 +50,7 @@ export default function Stats() {
 
         <div className="mx-auto grid max-w-5xl gap-20 md:grid-cols-3">
 
-          {stats.map((stat) => {
+          {statistics.map((stat) => {
             const Icon = stat.icon;
 
             return (
