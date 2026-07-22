@@ -21,9 +21,22 @@ export const board: BoardMember[] = [
 
  {
   id: 1,
-  name: "Rtr. President Name",
+  name: "Rtr. Kevin Thomas",
   position: "President",
   image: "/images/board/president.jpg",
+  group: "CORE",
+
+  email: "president@rotaractsydenham.in",
+
+  instagram: "https://instagram.com/username",
+
+  linkedin: "https://linkedin.com/in/username",
+},
+{
+  id: 17,
+  name: "Rtr. Trissha Desai",
+  position: "Immediate Past President & Advisor",
+  image: "/images/board/immpresident.jpg",
   group: "CORE",
 
   email: "president@rotaractsydenham.in",
@@ -77,6 +90,30 @@ export const board: BoardMember[] = [
     name: "Rtr. Treasurer Name",
     position: "Treasurer",
     image: "/images/board/treasurer.jpg",
+    group: "CORE",
+    email: "president@rotaractsydenham.in",
+
+  instagram: "https://instagram.com/username",
+
+  linkedin: "https://linkedin.com/in/username",
+  },
+  {
+    id: 18,
+    name: "Rtr. SAA Name",
+    position: "Sergeant-At-Arms",
+    image: "/images/board/SAA.jpg",
+    group: "CORE",
+    email: "president@rotaractsydenham.in",
+
+  instagram: "https://instagram.com/username",
+
+  linkedin: "https://linkedin.com/in/username",
+  },
+  {
+    id: 16,
+    name: "Rtr. HRD Name",
+    position: "HRD Officer",
+    image: "/images/board/HRD.jpg",
     group: "CORE",
     email: "president@rotaractsydenham.in",
 

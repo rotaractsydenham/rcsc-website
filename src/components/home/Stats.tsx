@@ -33,8 +33,8 @@ export default function Stats() {
   });
 
   return (
-    <section ref={ref} className="bg-slate-50 py-24 dark:bg-slate-900">
-      <div className="mx-auto max-w-7xl px-6">
+    <section ref={ref} className="bg-slate-50 py-15 dark:bg-slate-900">
+      <div className="mx-auto max-w-5xl px-6">
 
         <div className="mb-16 text-center">
 
@@ -48,7 +48,7 @@ export default function Stats() {
 
         </div>
 
-        <div className="mx-auto grid max-w-5xl gap-20 md:grid-cols-3">
+        <div className="mx-auto grid max-w-5xl gap-10 md:grid-cols-3">
 
           {statistics.map((stat) => {
             const Icon = stat.icon;

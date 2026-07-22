@@ -39,7 +39,7 @@ export const benefits = [
 
 export const eligibility = [
   "Student of Sydenham College",
-  "Age 18–30",
+  "Age 16–30",
   "Passion for Service",
   "Commitment to Club Activities",
   "Willingness to Learn",

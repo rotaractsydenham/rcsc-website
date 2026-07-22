@@ -17,6 +17,8 @@ export default function NotFound() {
 
         <p className="mx-auto mt-8 max-w-xl text-lg leading-8 text-slate-500 dark:text-slate-400">
           The page you're looking for doesn't exist or may have been moved.
+         OR...
+          You are ready to Join Rotaract!
         </p>
 
         <div className="mt-14 flex flex-wrap justify-center gap-5">

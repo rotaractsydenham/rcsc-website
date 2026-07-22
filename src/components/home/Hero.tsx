@@ -1,5 +1,6 @@
 import { club } from "@/content/club";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -41,13 +42,18 @@ export default function Hero() {
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
 
-          <button className="rounded-xl bg-yellow-400 px-8 py-4 font-semibold text-slate-900 transition hover:bg-yellow-300">
-            Join Us
-          </button>
+          <Link
+              href="/join"
+               className="rounded-xl bg-yellow-400 px-8 py-4 font-semibold text-slate-900 transition hover:bg-yellow-300">
+            
+              Join RCSC
+            </Link>
 
-          <button className="rounded-xl border border-white px-8 py-4 transition hover:bg-white hover:text-slate-900">
+          <Link 
+            href="/projects"
+            className="rounded-xl border border-white px-8 py-4 transition hover:bg-white hover:text-slate-900">
             Explore Projects
-          </button>
+          </Link>
 
         </div>
 

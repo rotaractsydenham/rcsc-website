@@ -39,6 +39,6 @@ export const events: Event[] = [
       "Official Installation Ceremony of the Board of Directors and team.",
     featured: true,
     status: "Completed",
-    registrationLink: "#",
+    registrationLink: "google.com",
   },
 ];

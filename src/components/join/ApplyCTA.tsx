@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function ApplyCTA() {
   return (
-    <section className="py-24">
+    <main className="pt-10 pb-10">
 
       <div className="mx-auto max-w-4xl rounded-3xl bg-yellow-400 px-10 py-20 text-center">
 
@@ -23,6 +23,6 @@ export default function ApplyCTA() {
 
       </div>
 
-    </section>
+    </main>
   );
 }

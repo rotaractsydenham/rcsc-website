@@ -26,7 +26,7 @@ const features = [
 
 export default function AboutSection() {
   return (
-    <section className="bg-white py-24 dark:bg-slate-950">
+    <section className="bg-white py-10 dark:bg-slate-950">
       <div className="mx-auto max-w-7xl px-6">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -80,8 +80,10 @@ export default function AboutSection() {
         </div>
 
         {/* Feature Cards */}
+        <main className="pt-0 pb-0">
 
-        <div className="mt-24 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          
+        <div className="mt-10 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
           {features.map((feature) => {
             const Icon = feature.icon;
@@ -110,9 +112,9 @@ export default function AboutSection() {
 
             );
           })}
-
+          
         </div>
-
+        </main>
       </div>
     </section>
   );

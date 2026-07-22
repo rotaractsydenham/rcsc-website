@@ -1,5 +1,5 @@
 export const contact = {
-  email: "info@rotaractsydenham.in",
+  email: "rotaractsydenham@gmail.com",
 
   phone: "+91 XXXXXXXXXX",
 
@@ -16,7 +16,7 @@ export const contact = {
   parentClub: "Rotary Club of Bombay",
 
   meeting:
-    "Every week during the academic year (Update as required).",
+    "Every week during the academic year.",
 
   social: {
     instagram: "https://instagram.com/rotaract.sydenham",

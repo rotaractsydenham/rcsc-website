@@ -1,35 +1,38 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 
-interface CardProps {
+interface ButtonProps {
+  href?: string;
   children: ReactNode;
-  className?: string;
+  variant?: "primary" | "secondary";
 }
 
-export default function Card({
+export default function Button({
+  href,
   children,
-  className = "",
-}: CardProps) {
+  variant = "primary",
+}: ButtonProps) {
+  const classes =
+    variant === "primary"
+      ? "bg-yellow-400 text-slate-900 hover:bg-yellow-300"
+      : "border border-slate-300 hover:border-yellow-400";
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        className={`inline-flex items-center justify-center rounded-xl px-8 py-4 font-semibold transition-all duration-300 ${classes}`}
+      >
+        {children}
+      </Link>
+    );
+  }
+
   return (
-    <div
-      className={`
-        group
-        rounded-3xl
-        border
-        border-slate-200
-        bg-white
-        p-8
-        shadow-sm
-        transition-all
-        duration-300
-        hover:-translate-y-2
-        hover:border-yellow-400
-        hover:shadow-xl
-        dark:border-slate-800
-        dark:bg-slate-900
-        ${className}
-      `}
+    <button
+      className={`rounded-xl px-8 py-4 font-semibold transition-all duration-300 ${classes}`}
     >
       {children}
-    </div>
+    </button>
   );
 }

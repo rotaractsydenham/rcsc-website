@@ -21,11 +21,11 @@ export default function ProjectCard({ project }: Props) {
 
       <div className="p-6">
 
-        <p className="text-sm font-semibold text-yellow-500">
+        <span className="rounded-full bg-yellow-400 px-3 py-1 text-xs font-bold uppercase text-slate-900">
           {project.avenue}
-        </p>
+        </span>
 
-        <h3 className="mt-3 text-2xl font-bold">
+        <h3 className="mt-4 text-3xl font-bold">
           {project.title}
         </h3>
 

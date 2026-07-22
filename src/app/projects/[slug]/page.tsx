@@ -51,6 +51,7 @@ export default async function ProjectPage({ params }: Props) {
           <p>{project.beneficiaries}</p>
         </div>
       </div>
+      <main className="pt-10 pb-10"></main>
     </main>
   );
 }

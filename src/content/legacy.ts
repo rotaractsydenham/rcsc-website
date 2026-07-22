@@ -97,7 +97,7 @@ export const legacy: LegacyYear[] = [
     id: 4,
     slug: "2023-24",
     year: "2023–24",
-    theme: "Celestial Beginnings",
+    theme: "Celestia",
 
     president: "TBA",
     secretary: "TBA",
@@ -119,7 +119,7 @@ export const legacy: LegacyYear[] = [
     id: 5,
     slug: "2024-25",
     year: "2024–25",
-    theme: "Panchtatva: Balance Within and Around Us",
+    theme: "Panchtatva",
 
     president: "Rtr. Suyash Save",
     secretary: "TBA",

@@ -54,7 +54,7 @@ export default async function EventPage({ params }: Props) {
       <p className="mt-10 text-lg leading-8">
         {event.description}
       </p>
-
+    <main className="pt-10 pb-10"></main>
     </main>
   );
 }

@@ -157,7 +157,7 @@ export default function Footer() {
           <div>
 
             <h4 className="mb-6 text-lg font-bold text-white">
-              Flagship Projects
+              Featured Projects
             </h4>
 
             <ul className="space-y-4">

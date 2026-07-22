@@ -11,11 +11,11 @@ const tabs = [
   },
   {
     id: "MAIN_AVENUES",
-    label: "Main Avenues",
+    label: "Main Avenue",
   },
   {
     id: "SUPPORTING",
-    label: "Supporting Functions",
+    label: "Supporting Function",
   },
 ];
 
