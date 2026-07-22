@@ -14,7 +14,7 @@ export default function PageHero({
   image,
 }: PageHeroProps) {
   return (
-    <section className="relative flex h-[45vh] items-center justify-center overflow-hidden pt-15">
+    <section className="relative flex h-[45vh] items-center justify-center overflow-hidden pt-14">
 
       {/* Background Image */}
       <Image
