@@ -27,4 +27,18 @@ export const events: Event[] = [
     status: "Upcoming",
     registrationLink: "#",
   },
+  {
+    id: 2,
+    title: "Installation Ceremony 2025",
+    slug: "installation-2025",
+    date: "15 August 2025",
+    time: "1:00 PM",
+    venue: "Sydenham College room 31",
+    image: "/images/events/installation2025.jpg",
+    description:
+      "Official Installation Ceremony of the Board of Directors and team.",
+    featured: true,
+    status: "Completed",
+    registrationLink: "#",
+  },
 ];

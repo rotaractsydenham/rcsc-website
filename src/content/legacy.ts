@@ -61,7 +61,7 @@ export const legacy: LegacyYear[] = [
     coverImage: "/images/legacy/2021.jpg",
 
     description:
-      "Strengthening fellowship and expanding community initiatives.",
+      "Strengthening fellowship and expanding community initiatives. The onset of new ideas and leadership.",
 
     message:
       "Growth happens when every member grows together.",

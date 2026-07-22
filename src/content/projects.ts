@@ -44,7 +44,7 @@ export const projects: Project[] = [
       "Shining Paws is a community service project aimed at improving the safety of street dogs by providing them with reflective collars. These collars make the dogs more visible to drivers at night, reducing the risk of accidents and promoting a safer environment for both animals and humans.",
     date: "3 January 2025",
     beneficiaries: "16 Dogs",
-    featured: false,
+    featured: true,
 
     status: "Completed",
   },

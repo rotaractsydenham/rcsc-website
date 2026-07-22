@@ -67,7 +67,7 @@ export default function ContactForm() {
           <input
             id="phone"
             type="tel"
-            placeholder="+91 9876543210"
+            placeholder="+91 XXXXX XXXXX"
             className="w-full rounded-xl border border-slate-300 bg-transparent px-5 py-4 transition focus:border-yellow-400 focus:outline-none dark:border-slate-700"
           />
         </div>

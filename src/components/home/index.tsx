@@ -4,8 +4,6 @@ import AboutSection from "./AboutSection";
 import UpcomingEvents from "./UpcomingEvents";
 import PresidentMessage from "./PresidentMessage";
 import FeaturedProjects from "./FeaturedProjects";
-import LegacyPreview from "./LegacyPreview";
-
 export default function HomePage() {
   return (
     <>
@@ -15,7 +13,6 @@ export default function HomePage() {
       <UpcomingEvents />
       <PresidentMessage />
       <FeaturedProjects />
-      <LegacyPreview />
     </>
   );
 }

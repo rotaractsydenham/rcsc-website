@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 
 import { contact } from "@/content/contact";
+import Card from "../ui/Card";
 
 export default function ContactInfo() {
   return (
@@ -65,7 +66,7 @@ function InfoCard({
   value,
 }: CardProps) {
   return (
-    <div className="rounded-3xl border bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-yellow-400 hover:shadow-lg dark:bg-slate-900">
+    <Card>
 
       <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-yellow-400 text-slate-900">
         {icon}
@@ -79,6 +80,6 @@ function InfoCard({
         {value}
       </p>
 
-    </div>
+    </Card>
   );
 }

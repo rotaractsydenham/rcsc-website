@@ -3,7 +3,7 @@ export const club = {
 
   shortName: "RCSC",
 
-  tagline: "Develop • Lead • Serve",
+  tagline: "Developing Skills • Creating Leaders • Serving Communities",
 
   charterYear: 2020,
 
