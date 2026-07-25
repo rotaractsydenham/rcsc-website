@@ -2,7 +2,7 @@ import { eligibility } from "@/content/join";
 
 export default function Eligibility() {
   return (
-    <section className="py-24">
+    <section className="py-10">
 
       <div className="mx-auto max-w-6xl px-6">
 

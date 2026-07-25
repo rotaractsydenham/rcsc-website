@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Calendar, Trophy } from "lucide-react";
+import { ArrowLeft, ArrowRight, Calendar, Trophy, PartyPopper } from "lucide-react";
 
 import { legacy } from "@/content/legacy";
 import PageHero from "@/components/shared/PageHero";
@@ -123,7 +123,8 @@ export default async function LegacyYearPage({ params }: Props) {
 
           <section className="mb-20">
 
-            <h2 className="mb-8 text-3xl font-bold">
+            <h2 className="mb-8 flex items-center gap-3 text-3xl font-bold">
+               <PartyPopper className="text-yellow-500" />
               Major Events
             </h2>
 

@@ -3,6 +3,7 @@ import FeaturedAlbum from "@/components/gallery/FeaturedAlbum";
 import AlbumCard from "@/components/gallery/AlbumCard";
 
 import { albums } from "@/content/gallery";
+import HorizontalScroll from "@/components/ui/HorizontalSnap";
 
 export default function GalleryPage() {
   return (
@@ -20,8 +21,7 @@ export default function GalleryPage() {
 
           <FeaturedAlbum album={albums[0]} />
 
-          <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-
+          <HorizontalScroll>
             {albums.map((album) => (
               <AlbumCard
                 key={album.id}
@@ -29,7 +29,7 @@ export default function GalleryPage() {
               />
             ))}
 
-          </div>
+          </HorizontalScroll>
 
         </div>
 

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Users, HeartHandshake, Briefcase, Globe } from "lucide-react";
+import Link from "next/link";
 
 const features = [
   {
@@ -56,9 +57,11 @@ export default function AboutSection() {
             </p>
 
             <div className="mt-10">
-              <button className="rounded-xl bg-yellow-500 px-6 py-3 font-semibold text-slate-900 hover:bg-yellow-400">
+              <Link
+                href="/about" 
+              className="rounded-xl bg-yellow-500 px-6 py-3 font-semibold text-slate-900 hover:bg-yellow-400">
                 Learn More
-              </button>
+              </Link>
             </div>
 
           </div>

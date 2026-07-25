@@ -11,11 +11,11 @@ const tabs = [
   },
   {
     id: "MAIN_AVENUES",
-    label: "Main Avenue",
+    label: "Main Avenues",
   },
   {
-    id: "SUPPORTING",
-    label: "Supporting Function",
+    id: "SUPPORTING_FUNCTIONS",
+    label: "Supporting Functions",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function LeadershipTabs() {
 
       <div
         className={`grid gap-8 ${
-          activeTab === "SUPPORTING"
+          activeTab === "SUPPORTING_FUNCTIONS"
             ? "sm:grid-cols-2 lg:grid-cols-5"
             : activeTab === "MAIN_AVENUES"
             ? "md:grid-cols-2 lg:grid-cols-3"
@@ -69,7 +69,7 @@ export default function LeadershipTabs() {
               index === 0
             }
             compact={
-              activeTab === "SUPPORTING"
+              activeTab === "SUPPORTING_FUNCTIONS"
             }
           />
         ))}
