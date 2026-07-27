@@ -36,7 +36,7 @@ export const board: BoardMember[] = [
   id: 17,
   name: "Rtr. Trissha Desai",
   position: "Immediate Past President & Advisor",
-  image: "/images/board/immpresident.jpg",
+  image: "/images/board/immpresident.jpeg",
   group: "CORE",
 
   email: "president@rotaractsydenham.in",

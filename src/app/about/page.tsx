@@ -1,37 +1,44 @@
 import PageHero from "@/components/shared/PageHero";
-import { club } from "@/content/club";
+
+import AboutCollege from "@/components/about/AboutCollege";
+import AboutClub from "@/components/about/AboutClub";
 import VisionMission from "@/components/about/VisionMission";
+import JourneyTimeline from "@/components/about/JourneyTimeline";
+import CoreValues from "@/components/about/CoreValues";
+import AvenuesSection from "@/components/about/AvenuesSection";
+import RotaryConnection from "@/components/about/RotaryConnection";
+import WhyJoin from "@/components/about/WhyJoin";
+import ClosingQuote from "@/components/about/ClosingQuote";
 
 export default function AboutPage() {
   return (
     <>
       <PageHero
-  eyebrow="ABOUT"
-  title="Who We Are"
-  subtitle="Developing leaders through service and fellowship."
-  image="/images/banners/about.jpg"
-/>
+        eyebrow="ABOUT"
+        title="More Than a Club"
+        subtitle="A family of young leaders creating lasting impact through service, fellowship and leadership."
+        image="/images/banners/about.jpg"
+      />
 
       <main className="pt-20 pb-40">
 
-        <div className="mx-auto max-w-7xl px-6">
+        <AboutCollege />
 
-          {/* WHO WE ARE */}
+        <AboutClub />
 
-          <section className="mb-24">
+        <VisionMission />
 
-            <h2 className="text-4xl font-bold">
-              Who We Are
-            </h2>
-            <VisionMission />
+        <JourneyTimeline />
 
-            <p className="mt-8 max-w-4xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-              {club.description}
-            </p>
+        <CoreValues />
 
-          </section>
+        <AvenuesSection />
 
-        </div>
+        <RotaryConnection />
+
+        <WhyJoin />
+
+        <ClosingQuote />
 
       </main>
     </>
