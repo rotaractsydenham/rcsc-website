@@ -1,10 +1,16 @@
 import { notFound } from "next/navigation";
-import AlbumGallery from "@/components/gallery/AlbumGallery";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Calendar, Images } from "lucide-react";
 
 import { albums } from "@/content/gallery";
 import PageHero from "@/components/shared/PageHero";
+
+export function generateStaticParams() {
+  return albums.map((album) => ({
+    slug: album.slug,
+  }));
+}
 
 interface Props {
   params: Promise<{
@@ -69,24 +75,43 @@ export default async function AlbumPage({
               />
 
               <span>
-
                 {album.images.length} Photos
-
               </span>
 
             </div>
 
             <div className="rounded-full border px-5 py-3">
-
               {album.category}
-
             </div>
 
           </div>
 
-         <AlbumGallery album={album} />
+          {/* Images */}
+
+          <div className="columns-1 gap-6 sm:columns-2 lg:columns-3">
+
+            {album.images.map((image, index) => (
+
+              <div
+                key={index}
+                className="mb-6 break-inside-avoid overflow-hidden rounded-3xl"
+              >
+
+                <Image
+                  src={image}
+                  alt={`${album.title} ${index + 1}`}
+                  width={700}
+                  height={700}
+                  className="w-full rounded-3xl object-cover transition duration-500 hover:scale-105"
+                />
+
+              </div>
+
+            ))}
 
           </div>
+
+        </div>
 
       </main>
     </>

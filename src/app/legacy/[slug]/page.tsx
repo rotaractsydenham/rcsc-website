@@ -2,9 +2,14 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Calendar, Trophy, PartyPopper } from "lucide-react";
-
 import { legacy } from "@/content/legacy";
 import PageHero from "@/components/shared/PageHero";
+
+export function generateStaticParams() {
+  return legacy.map((item) => ({
+    slug: item.slug,
+  }));
+}
 
 interface Props {
   params: Promise<{

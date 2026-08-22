@@ -2,6 +2,12 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { events } from "@/content/events";
 
+export function generateStaticParams() {
+  return events.map((event) => ({
+    slug: event.slug,
+  }));
+}
+
 interface Props {
   params: Promise<{
     slug: string;
