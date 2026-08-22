@@ -4,13 +4,16 @@ import Image from "next/image";
 
 export default function ClosingQuote() {
   return (
-    <section className="relative overflow-hidden bg-slate-950 py-32 text-white">
+    <section className="relative bg-slate-950 pt-20 pb-32 text-white">
+
+      {/* Extend Closing Quote background below the section */}
+      <div className="absolute inset-x-0 bottom-0 h-40 translate-y-full bg-slate-950" />
 
       {/* Background Glow */}
 
       <div className="absolute left-1/2 top-0 h-96 w-96 -translate-x-1/2 rounded-full bg-yellow-500/10 blur-[140px]" />
 
-      <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 text-center">
+      <div className="relative z-10 mx-auto flex max-w-5xl flex-col items-center px-6 text-center">
 
         {/* Eyebrow */}
 
@@ -29,21 +32,17 @@ export default function ClosingQuote() {
         {/* Heading */}
 
         <h2 className="text-5xl font-black leading-tight md:text-6xl">
-
           Together, We Lead.
           <br />
           Together, We Serve.
-
         </h2>
 
         {/* Quote */}
 
         <p className="mt-10 max-w-3xl text-xl leading-10 text-slate-300">
-
           "Every great journey begins with a single step. At the Rotaract Club
           of Sydenham College, that step becomes a lifetime of leadership,
           friendship and meaningful service."
-
         </p>
 
         {/* Griffin */}
@@ -56,7 +55,7 @@ export default function ClosingQuote() {
             width={112}
             height={112}
             className="mx-auto opacity-90"
-            />
+          />
 
         </div>
 

@@ -19,7 +19,6 @@ export default async function EventPage({ params }: Props) {
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-24">
-
       <Image
         src={event.image}
         alt={event.title}
@@ -33,28 +32,25 @@ export default async function EventPage({ params }: Props) {
       </h1>
 
       <div className="mt-10 grid gap-6 md:grid-cols-3">
-
         <div className="rounded-xl border p-6">
-          <h3>Date</h3>
+          <h3 className="font-semibold">Date</h3>
           <p>{event.date}</p>
         </div>
 
         <div className="rounded-xl border p-6">
-          <h3>Time</h3>
+          <h3 className="font-semibold">Time</h3>
           <p>{event.time}</p>
         </div>
 
         <div className="rounded-xl border p-6">
-          <h3>Venue</h3>
+          <h3 className="font-semibold">Venue</h3>
           <p>{event.venue}</p>
         </div>
-
       </div>
 
       <p className="mt-10 text-lg leading-8">
         {event.description}
       </p>
-    <main className="pt-10 pb-10"></main>
     </main>
   );
 }

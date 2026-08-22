@@ -40,7 +40,7 @@ export default function LegacyShowcase() {
 
   return (
 
-    <section className="pt-20 pb-50">
+    <section className="pt-20 pb-0">
 
       <div className="mx-auto max-w-7xl px-6">
 
