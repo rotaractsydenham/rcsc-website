@@ -11,7 +11,7 @@ export default function GalleryPreview() {
   if (!featuredAlbum) return null;
 
   return (
-    <section className="overflow-hidden py-48">
+    <section className=" mb-20 overflow-hidden py-28">
       <div className="mx-auto max-w-7xl px-6">
 
         {/* Heading */}
