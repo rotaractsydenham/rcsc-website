@@ -1,7 +1,10 @@
 import { events } from "@/content/events";
+
 import EventCard from "@/components/home/EventCard";
 import PageHero from "@/components/shared/PageHero";
-import HorizontalScroll from "@/components/ui/HorizontalSnap";
+
+import HorizontalSnap from "@/components/ui/HorizontalSnap";
+import SnapItem from "@/components/ui/SnapItem";
 
 export default function EventsPage() {
   return (
@@ -14,18 +17,27 @@ export default function EventsPage() {
       />
 
       <main className="pt-20 pb-40">
-        <div className="mx-auto max-w-7xl px-6">
 
-          <HorizontalScroll>
+        <div className="mx-auto max-w-7xl lg:px-6">
+
+          <HorizontalSnap>
+
             {events.map((event) => (
-              <EventCard
-                key={event.id}
-                {...event}
-              />
+
+              <SnapItem key={event.id}>
+
+                <EventCard
+                  {...event}
+                />
+
+              </SnapItem>
+
             ))}
-          </HorizontalScroll>
+
+          </HorizontalSnap>
 
         </div>
+
       </main>
     </>
   );
