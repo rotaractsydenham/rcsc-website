@@ -1,5 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  ArrowUpRight,
+  CalendarDays,
+  Clock3,
+  MapPin,
+} from "lucide-react";
 
 interface EventCardProps {
   title: string;
@@ -16,41 +22,100 @@ interface EventCardProps {
 
 export default function EventCard(event: EventCardProps) {
   return (
-    <Link href={`/events/${event.slug}`}>
-      <div className="overflow-hidden rounded-3xl border bg-white shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl dark:bg-slate-900">
+    <Link href={`/events/${event.slug}`} className="group block h-full">
+      <article className="flex h-full min-h-[500px] flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-yellow-400 hover:shadow-2xl dark:border-slate-800 dark:bg-slate-900">
 
-        <Image
-          src={event.image}
-          alt={event.title}
-          width={600}
-          height={400}
-          className="h-60 w-full object-cover"
-        />
+        {/* Image */}
+        <div className="relative h-[300px] shrink-0 overflow-hidden">
+          <Image
+            src={event.image}
+            alt={event.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+            className="object-cover transition duration-700 ease-out group-hover:scale-105"
+          />
 
-        <div className="p-6">
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
 
-          <p className="text-sm font-semibold text-yellow-500">
-            {event.date}
-          </p>
+          {/* Status */}
+          <div className="absolute left-5 top-5">
+            <span
+              className={`rounded-full px-4 py-2 text-xs font-bold uppercase tracking-[0.16em] ${
+                event.status === "Upcoming"
+                  ? "bg-yellow-400 text-slate-900"
+                  : "bg-black/50 text-white backdrop-blur-md"
+              }`}
+            >
+              {event.status}
+            </span>
+          </div>
 
-          <h3 className="mt-2 text-2xl font-bold">
-            {event.title}
-          </h3>
+          {/* Title */}
+          <div className="absolute bottom-6 left-6 right-6">
+            <h3 className="text-3xl font-black leading-tight text-white">
+              {event.title}
+            </h3>
+          </div>
+        </div>
 
-          <p className="mt-2 text-slate-500">
-            📍 {event.venue}
-          </p>
+        {/* Content */}
+        <div className="flex flex-1 flex-col p-6">
 
-          <p className="mt-4 text-slate-600 dark:text-slate-400">
+          {/* Event Details */}
+          <div className="space-y-3 text-sm text-slate-500 dark:text-slate-400">
+
+            <div className="flex items-center gap-3">
+              <CalendarDays
+                size={17}
+                className="shrink-0 text-yellow-500"
+              />
+              <span>{event.date}</span>
+            </div>
+
+            <div className="flex items-center gap-3">
+              <Clock3
+                size={17}
+                className="shrink-0 text-yellow-500"
+              />
+              <span>{event.time}</span>
+            </div>
+
+            <div className="flex items-start gap-3">
+              <MapPin
+                size={17}
+                className="mt-0.5 shrink-0 text-yellow-500"
+              />
+              <span>{event.venue}</span>
+            </div>
+
+          </div>
+
+          {/* Description */}
+          <p className="mt-5 line-clamp-3 text-[15px] leading-7 text-slate-500 dark:text-slate-400">
             {event.description}
           </p>
 
-          <button className="mt-6 rounded-xl bg-yellow-500 px-5 py-3 font-semibold text-slate-900 transition hover:bg-yellow-400">
-            Learn More
-          </button>
+          {/* CTA */}
+          <div className="mt-auto pt-6">
+            <div className="flex items-center justify-between gap-4">
+
+              <span className="inline-flex items-center rounded-full border border-yellow-400 px-5 py-2.5 text-sm font-bold uppercase tracking-[0.14em] text-slate-900 transition-colors duration-300 group-hover:bg-yellow-400 dark:text-white">
+                Learn More
+              </span>
+
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-yellow-400 text-slate-900 transition-all duration-300 group-hover:translate-x-1 group-hover:bg-yellow-300">
+                <ArrowUpRight
+                  size={19}
+                  className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                />
+              </span>
+
+            </div>
+          </div>
 
         </div>
-      </div>
+      </article>
     </Link>
   );
 }
