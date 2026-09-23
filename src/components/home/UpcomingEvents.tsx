@@ -1,35 +1,51 @@
 import EventCard from "./EventCard";
 import { events } from "@/content/events";
+import HorizontalSnap from "@/components/ui/HorizontalSnap";
+import SnapItem from "@/components/ui/SnapItem";
 
 export default function UpcomingEvents() {
+  const featuredEvents = events.filter(
+    (event) => event.featured
+  );
+
   return (
     <section className="bg-slate-50 py-24 dark:bg-slate-950">
+      
       <div className="mx-auto max-w-7xl px-6">
+        <div className="mb-14 text-center">
+          
+          <div className="mb-4 flex items-center justify-center gap-3">
+            <span className="h-[2px] w-10 rounded-full bg-yellow-400" />
 
-        <div className="mb-16 text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.4em] text-yellow-500">
+              Upcoming Events
+            </p>
 
-          <p className="font-semibold uppercase tracking-[0.3em] text-yellow-500">
-            Upcoming Events
-          </p>
+            <span className="h-[2px] w-10 rounded-full bg-yellow-400" />
+          </div>
 
-          <h2 className="mt-4 text-4xl font-bold">
+          <h2 className="text-4xl font-black sm:text-5xl">
             Join Our Next Events
           </h2>
 
-        </div>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate-500 dark:text-slate-400">
+            Discover what's happening at RCSC and be part of our
+            next experiences, initiatives and moments together.
+          </p>
 
-        <div className="grid gap-8 lg:grid-cols-3">
-          {events
-  .filter((event) => event.featured)
-  .map((event) => (
-    <EventCard
-      key={event.id}
-      {...event}
-    />
-  ))}
         </div>
-
       </div>
+
+      <div className="mx-auto max-w-7xl">
+        <HorizontalSnap>
+          {featuredEvents.map((event) => (
+            <SnapItem key={event.id}>
+              <EventCard {...event} />
+            </SnapItem>
+          ))}
+        </HorizontalSnap>
+      </div>
+
     </section>
   );
 }
