@@ -19,7 +19,7 @@ export default function Footer() {
     { name: "About", href: "/about" },
     { name: "Leadership", href: "/leadership" },
     { name: "Projects", href: "/projects" },
-    { name: "Events", href: "/events" },
+    { name: "Events", href: "/highlights" },
     { name: "Gallery", href: "/gallery" },
     { name: "Legacy", href: "/legacy" },
     { name: "Contact", href: "/contact" },

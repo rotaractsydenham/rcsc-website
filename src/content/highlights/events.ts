@@ -1,4 +1,4 @@
-export interface Event {
+export interface HighlightEvent {
   id: number;
   title: string;
   slug: string;
@@ -12,21 +12,22 @@ export interface Event {
   status: "Upcoming" | "Completed";
 }
 
-export const events: Event[] = [
+export const highlightEvents: HighlightEvent[] = [
   {
     id: 1,
     title: "Installation Ceremony 2026",
     slug: "installation-2026",
-    date: "15 August 2026",
-    time: "5:00 PM",
+    date: "21 September 2026",
+    time: "2:00 PM",
     venue: "Sydenham College",
-    image: "/images/events/installation.jpg",
+    image: "/images/highlights/events/installation.jpg",
     description:
       "Official Installation Ceremony of the Board of Directors.",
     featured: true,
     status: "Upcoming",
     registrationLink: "#",
   },
+
   {
     id: 2,
     title: "Installation Ceremony 2025",
@@ -34,7 +35,7 @@ export const events: Event[] = [
     date: "15 August 2025",
     time: "1:00 PM",
     venue: "Sydenham College room 31",
-    image: "/images/events/installation2025.jpg",
+    image: "/images/highlights/events/installation2025.jpg",
     description:
       "Official Installation Ceremony of the Board of Directors and team.",
     featured: true,

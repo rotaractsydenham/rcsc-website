@@ -51,8 +51,8 @@ const links = [
     icon: History,
   },
   {
-    name: "Events",
-    href: "/events",
+    name: "Highlights",
+    href: "/highlights",
     icon: Calendar,
   },
   {

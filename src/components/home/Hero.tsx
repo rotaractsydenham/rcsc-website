@@ -352,7 +352,7 @@ export default function Hero() {
         <div
           className="
             whitespace-nowrap
-            text-[2.3rem]
+            text-[2.55rem]
           "
         >
           {lineOne}
@@ -372,7 +372,7 @@ export default function Hero() {
             className="
               mt-1
               whitespace-nowrap
-              text-[2.3rem]
+              text-[2.55rem]
               text-yellow-400
             "
           >
@@ -394,7 +394,7 @@ export default function Hero() {
             className="
               mt-1
               whitespace-nowrap
-              text-[2.3rem]
+              text-[2.55rem]
               text-yellow-400
             "
           >
@@ -1092,12 +1092,7 @@ export default function Hero() {
           className="
             absolute
             inset-0
-            bg-gradient-to-t
-            from-white
-            via-white/70
-            to-transparent
-            dark:from-slate-950
-            dark:via-slate-950/70
+            
           "
         />
 

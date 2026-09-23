@@ -16,8 +16,8 @@ export const navigation = [
     href: "/legacy",
   },
   {
-    name: "Events",
-    href: "/events",
+    name: "Highlights",
+    href: "/highlights",
   },
   {
     name: "Projects",

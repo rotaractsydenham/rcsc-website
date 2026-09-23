@@ -32,11 +32,11 @@ export default function NotFound() {
           </Link>
 
           <Link
-            href="/events"
+            href="/highlights"
             className="inline-flex items-center gap-3 rounded-xl border px-8 py-4 font-semibold transition hover:border-yellow-400"
           >
             <Compass size={20} />
-            Explore Events
+            Explore Highlights
           </Link>
 
         </div>

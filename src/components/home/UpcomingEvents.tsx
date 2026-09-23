@@ -1,10 +1,10 @@
 import EventCard from "./EventCard";
-import { events } from "@/content/events";
+import { highlightEvents } from "@/content/highlights/events";
 import HorizontalSnap from "@/components/ui/HorizontalSnap";
 import SnapItem from "@/components/ui/SnapItem";
 
 export default function UpcomingEvents() {
-  const featuredEvents = events.filter(
+  const featuredEvents = highlightEvents.filter(
     (event) => event.featured
   );
 
