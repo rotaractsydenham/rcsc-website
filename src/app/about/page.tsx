@@ -1,5 +1,4 @@
 import PageHero from "@/components/shared/PageHero";
-
 import AboutCollege from "@/components/about/AboutCollege";
 import AboutClub from "@/components/about/AboutClub";
 import VisionMission from "@/components/about/VisionMission";
@@ -12,35 +11,17 @@ import ClosingQuote from "@/components/about/ClosingQuote";
 
 export default function AboutPage() {
   return (
-    <>
-      <PageHero
-        eyebrow="ABOUT"
-        title="More Than a Club"
-        subtitle="A family of young leaders creating lasting impact through service, fellowship and leadership."
-        image="/images/banners/about.jpg"
-      />
-
-      <main className="pt-20 pb-40">
-
-        <AboutCollege />
-
-        <AboutClub />
-
-        <VisionMission />
-
-        <JourneyTimeline />
-
-        <CoreValues />
-
-        <AvenuesSection />
-
-        <RotaryConnection />
-
-        <WhyJoin />
-
-        <ClosingQuote />
-
-      </main>
-    </>
+    <main className="bg-white dark:bg-slate-950">
+      <PageHero eyebrow="ABOUT" title="More Than a Club" subtitle="A family of young leaders creating lasting impact through service, fellowship and leadership." image="/images/banners/about.jpg" />
+      <AboutCollege />
+      <AboutClub />
+      <VisionMission />
+      <JourneyTimeline />
+      <CoreValues />
+      <AvenuesSection />
+      <RotaryConnection />
+      <WhyJoin />
+      <ClosingQuote />
+    </main>
   );
 }

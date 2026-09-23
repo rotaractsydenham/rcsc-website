@@ -13,6 +13,8 @@ import {
   useState,
 } from "react";
 
+
+
 type AnimationPhase =
   | "full"
   | "typing-rcsc"
@@ -188,7 +190,9 @@ export default function Hero() {
           setPhase(
             "typing-final"
           );
+      
         }
+      
       };
 
     runAnimation();

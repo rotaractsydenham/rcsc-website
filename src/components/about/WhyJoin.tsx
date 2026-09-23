@@ -12,72 +12,19 @@ const benefits = [
 
 export default function WhyJoin() {
   return (
-    <section className="bg-slate-50 py-28 dark:bg-slate-950">
-      <div className="mx-auto max-w-4xl px-6">
-
-        {/* Heading */}
-
-        <div className="mb-5 flex items-center justify-center gap-4">
-
-          <span className="h-[2px] w-14 rounded-full bg-yellow-400" />
-
-          <span className="text-center text-sm font-bold uppercase tracking-[0.45em] text-yellow-500">
-            WHY JOIN RCSC
-          </span>
-
-          <span className="h-[2px] w-14 rounded-full bg-yellow-400" />
-
+    <section className="bg-slate-50 py-20 dark:bg-slate-950 sm:py-24 lg:py-28">
+      <div className="mx-auto max-w-6xl px-5 sm:px-8 lg:px-12">
+        <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+          <div className="lg:sticky lg:top-28">
+            <div className="mb-5 flex items-center gap-4"><span className="h-[2px] w-12 rounded-full bg-yellow-400" /><span className="text-xs font-extrabold uppercase tracking-[0.4em] text-yellow-500 sm:text-sm">Why Join RCSC</span></div>
+            <h2 className="text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">Your Journey Starts Here</h2>
+            <p className="mt-6 text-base leading-8 text-slate-600 dark:text-slate-300 sm:text-lg">Joining the Rotaract Club of Sydenham College is more than becoming a member of a student organisation. It is an opportunity to lead, serve, grow and create memories that last a lifetime.</p>
+            <Link href="/join" className="mt-8 inline-flex items-center gap-3 rounded-full bg-yellow-400 px-6 py-3.5 font-bold text-slate-900 transition hover:bg-yellow-300">Become a Member <ArrowRight size={17} /></Link>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {benefits.map((benefit, index) => <div key={benefit} className="rounded-[1.5rem] border border-slate-200 bg-white p-5 dark:border-slate-800 dark:bg-slate-900 sm:p-6"><div className="mb-5 flex items-center justify-between"><span className="text-xs font-black tracking-[0.2em] text-slate-400">0{index + 1}</span><CheckCircle2 size={22} className="text-yellow-500" /></div><p className="font-semibold leading-7">{benefit}</p></div>)}
+          </div>
         </div>
-
-        <h2 className="mx-auto max-w-2xl text-center text-4xl font-black leading-tight md:text-6xl">
-          Your Journey Starts Here
-        </h2>
-
-        <p className="mx-auto mt-8 max-w-3xl text-center text-lg leading-9 text-slate-600 dark:text-slate-300">
-          Joining the Rotaract Club of Sydenham College is more than becoming a
-          member of a student organisation. It is an opportunity to lead,
-          serve, grow and create memories that last a lifetime.
-        </p>
-
-        {/* Benefits */}
-
-        <div className="mx-auto mt-14 max-w-2xl space-y-5">
-
-          {benefits.map((benefit) => (
-            <div
-              key={benefit}
-              className="flex items-start gap-4 rounded-2xl border bg-white p-5 dark:bg-slate-900"
-            >
-              <CheckCircle2
-                size={22}
-                className="mt-1 shrink-0 text-yellow-500"
-              />
-
-              <p className="leading-8 text-slate-700 dark:text-slate-300">
-                {benefit}
-              </p>
-
-            </div>
-          ))}
-
-        </div>
-
-        {/* Button */}
-
-        <div className="mt-14 flex justify-center">
-
-          <Link
-            href="/join"
-            className="inline-flex items-center gap-3 rounded-xl bg-yellow-400 px-8 py-4 font-semibold text-slate-900 transition hover:bg-yellow-300"
-          >
-            Become a Member
-
-            <ArrowRight size={18} />
-
-          </Link>
-
-        </div>
-
       </div>
     </section>
   );
