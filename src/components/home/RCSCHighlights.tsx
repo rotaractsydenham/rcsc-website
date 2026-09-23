@@ -94,6 +94,7 @@ export default function RCSCHighlights() {
       {/* =====================================================
           TOP ACCENT
       ===================================================== */}
+
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-yellow-400/60 to-transparent" />
 
       {/* Background glow */}
@@ -104,6 +105,7 @@ export default function RCSCHighlights() {
         {/* =====================================================
             HEADER
         ===================================================== */}
+
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -123,6 +125,7 @@ export default function RCSCHighlights() {
               <p className="text-[10px] font-bold uppercase tracking-[0.28em] text-yellow-500 sm:text-xs sm:tracking-[0.35em]">
                 RCSC Highlights
               </p>
+
             </div>
 
             <h2 className="text-2xl font-black tracking-tight text-slate-950 sm:text-3xl dark:text-white">
@@ -162,27 +165,34 @@ export default function RCSCHighlights() {
           </Link>
         </motion.div>
 
-
         {/* =====================================================
             HIGHLIGHTS
         ===================================================== */}
+
         <div
           className="
-            flex gap-3
+            -mx-5
+            flex
+            snap-x
+            snap-mandatory
+            gap-2
             overflow-x-auto
+            px-5
             pb-3
-            snap-x snap-mandatory
 
             [-ms-overflow-style:none]
             [scrollbar-width:none]
             [&::-webkit-scrollbar]:hidden
 
+            sm:mx-0
             sm:grid
             sm:grid-cols-2
-            lg:grid-cols-3
             sm:gap-4
             sm:overflow-visible
+            sm:px-0
             sm:pb-0
+
+            lg:grid-cols-3
           "
         >
           {displayedHighlights.map((highlight, index) => {
@@ -199,9 +209,9 @@ export default function RCSCHighlights() {
                   delay: index * 0.08,
                 }}
                 className="
-                  w-[84%]
+                  w-[calc(100vw-40px)]
                   shrink-0
-                  snap-start
+                  snap-center
 
                   sm:w-auto
                   sm:shrink
@@ -213,18 +223,21 @@ export default function RCSCHighlights() {
                 >
                   <article
                     className={`
-                      relative flex h-full min-h-[280px]
-                      overflow-hidden rounded-[1.5rem]
+                      relative flex h-[310px]
+                      w-full
+                      overflow-hidden
+                      rounded-[1.5rem]
                       border
                       bg-white
                       transition-all duration-400
+
                       hover:-translate-y-1
                       hover:border-yellow-400
                       hover:shadow-xl
 
                       dark:bg-slate-950
 
-                      sm:min-h-[300px]
+                      sm:h-[300px]
                       sm:rounded-[1.75rem]
 
                       ${
@@ -238,21 +251,20 @@ export default function RCSCHighlights() {
                     {/* =================================================
                         IMAGE / BACKGROUND
                     ================================================= */}
+
                     {highlight.image ? (
                       <div className="absolute inset-0">
-
                         <Image
                           src={highlight.image}
                           alt={highlight.title}
                           fill
-                          sizes="(max-width: 640px) 84vw, (max-width: 1024px) 50vw, 33vw"
+                          sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 1024px) 50vw, 33vw"
                           className="object-cover transition-transform duration-700 group-hover:scale-105"
                         />
 
                         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/45 to-slate-950/5" />
                       </div>
                     ) : (
-                      /* Announcement / no-image background */
                       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 dark:from-slate-950 dark:via-slate-900 dark:to-slate-800">
 
                         <div className="absolute -right-10 -top-10 h-44 w-44 rounded-full bg-yellow-400/10 blur-3xl" />
@@ -260,18 +272,18 @@ export default function RCSCHighlights() {
                         <div className="absolute right-6 top-6 flex h-14 w-14 items-center justify-center rounded-2xl border border-yellow-400/20 bg-yellow-400/10 text-yellow-400">
                           <Icon size={25} />
                         </div>
+
                       </div>
                     )}
-
 
                     {/* =================================================
                         CARD CONTENT
                     ================================================= */}
-                    <div className="relative z-10 flex min-h-[280px] w-full flex-col justify-end p-5 sm:min-h-[300px] sm:p-6">
+
+                    <div className="relative z-10 flex h-full w-full flex-col justify-between p-5 sm:p-6">
 
                       {/* Type */}
-                      <div className="mb-auto">
-
+                      <div>
                         <span
                           className={`
                             inline-flex items-center gap-2
@@ -297,9 +309,7 @@ export default function RCSCHighlights() {
 
                           {highlight.type}
                         </span>
-
                       </div>
-
 
                       {/* Bottom content */}
                       <div>
@@ -308,20 +318,11 @@ export default function RCSCHighlights() {
                           {highlight.date}
                         </p>
 
-                        <h3 className="text-2xl font-black leading-tight text-white sm:text-[1.7rem]">
+                        <h3 className="line-clamp-2 text-2xl font-black leading-tight text-white sm:text-[1.7rem]">
                           {highlight.title}
                         </h3>
 
-                        <p
-                          className="
-                            mt-2
-                            line-clamp-2
-                            max-w-xl
-                            text-sm
-                            leading-6
-                            text-white/75
-                          "
-                        >
+                        <p className="mt-2 line-clamp-2 text-sm leading-6 text-white/75">
                           {highlight.description}
                         </p>
 
@@ -349,7 +350,6 @@ export default function RCSCHighlights() {
                         </div>
 
                       </div>
-
                     </div>
 
                   </article>
@@ -359,10 +359,10 @@ export default function RCSCHighlights() {
           })}
         </div>
 
-
         {/* =====================================================
             EMPTY STATE
         ===================================================== */}
+
         {displayedHighlights.length === 0 && (
           <div
             className="
@@ -390,11 +390,11 @@ export default function RCSCHighlights() {
           </div>
         )}
 
-
         {/* =====================================================
             MOBILE CTA
         ===================================================== */}
-        <div className="mt-4 flex justify-center sm:hidden">
+
+        <div className="mt-5 flex justify-center sm:hidden">
 
           <Link
             href="/highlights"

@@ -2,7 +2,6 @@ import PageHero from "@/components/shared/PageHero";
 import AboutCollege from "@/components/about/AboutCollege";
 import AboutClub from "@/components/about/AboutClub";
 import VisionMission from "@/components/about/VisionMission";
-import JourneyTimeline from "@/components/about/JourneyTimeline";
 import CoreValues from "@/components/about/CoreValues";
 import AvenuesSection from "@/components/about/AvenuesSection";
 import RotaryConnection from "@/components/about/RotaryConnection";
@@ -16,7 +15,6 @@ export default function AboutPage() {
       <AboutCollege />
       <AboutClub />
       <VisionMission />
-      <JourneyTimeline />
       <CoreValues />
       <AvenuesSection />
       <RotaryConnection />
