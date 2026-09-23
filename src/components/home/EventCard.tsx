@@ -30,7 +30,7 @@ export default function EventCard(event: EventCardProps) {
           bg-white shadow-sm
           transition-all duration-500
           hover:-translate-y-2 hover:border-yellow-400 hover:shadow-2xl
-          dark:border-slate-800 dark:bg-slate-900
+          dark:border-slate-800 dark:bg-slate-950
 
           sm:min-h-[500px]
           sm:rounded-[2rem]

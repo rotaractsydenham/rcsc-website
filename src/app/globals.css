@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,39 +19,41 @@
   --font-mono: var(--font-geist-mono);
 }
 
-
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ================================
+   Main Scrollbar
+   ================================ */
+
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #d4af37;
-    border-radius: 20px;
+  background: #d4af37;
+  border-radius: 20px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
+
+/* ================================
+   Image Hover
+   ================================ */
+
 .group img {
-    transition: transform .5s ease;
-}
-/* Hide horizontal scrollbar */
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+  transition: transform 0.5s ease;
 }
 
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
+/* ================================
+   Horizontal Scrollbar Utilities
+   ================================ */
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -68,4 +72,3 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
-

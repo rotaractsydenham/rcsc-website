@@ -112,7 +112,7 @@ export default function AboutSection() {
           h-80
           w-80
           rounded-full
-          bg-slate-200/40
+          bg-yellow-400/[0.03]
           blur-[100px]
           dark:bg-yellow-400/[0.02]
         "
@@ -603,8 +603,8 @@ export default function AboutSection() {
           h-20
           bg-gradient-to-b
           from-transparent
-          to-slate-50
-          dark:to-slate-900
+          to-white
+          dark:to-slate-950
         "
       />
     </section>

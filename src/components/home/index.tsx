@@ -1,8 +1,11 @@
 import Hero from "./Hero";
+import RCSCHighlights from "@/components/home/RCSCHighlights";
 import AboutSection from "./AboutSection";
 import PresidentMessage from "./PresidentMessage";
 import FeaturedProjects from "./FeaturedProjects";
-import RCSCHighlights from "@/components/home/RCSCHighlights";
+import LegacyShowcase from "@/components/home/LegacyPreview/LegacyShowcase";
+import GalleryPreview from "./GalleryPreview";
+
 export default function HomePage() {
   return (
     <>
@@ -11,6 +14,8 @@ export default function HomePage() {
       <AboutSection />
       <PresidentMessage />
       <FeaturedProjects />
+      <LegacyShowcase />
+      <GalleryPreview />
     </>
   );
 }

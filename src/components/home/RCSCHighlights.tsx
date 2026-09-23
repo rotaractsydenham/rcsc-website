@@ -89,7 +89,7 @@ export default function RCSCHighlights() {
   ].slice(0, 3);
 
   return (
-    <section className="relative overflow-hidden bg-slate-50 dark:bg-slate-900">
+    <section className="relative overflow-hidden bg-white dark:bg-slate-950">
 
       {/* =====================================================
           TOP ACCENT

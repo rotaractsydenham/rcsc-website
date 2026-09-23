@@ -9,7 +9,7 @@ export default function UpcomingEvents() {
   );
 
   return (
-    <section className="bg-slate-50 py-24 dark:bg-slate-950">
+    <section className="bg-white py-24 dark:bg-slate-950">
       
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-14 text-center">

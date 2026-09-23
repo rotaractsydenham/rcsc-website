@@ -57,7 +57,7 @@ export default function LegacyShowcase() {
           TOP SECTION TRANSITION
           ======================================== */}
 
-      <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-32 bg-gradient-to-b from-slate-50 via-slate-50/70 to-transparent dark:from-slate-900 dark:via-slate-900/70" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 z-0 h-32 bg-gradient-to-b from-white via-white/70 to-transparent dark:from-slate-950 dark:via-slate-950/70" />
 
       {/* Subtle yellow ambient glow */}
       <div className="pointer-events-none absolute left-1/2 top-24 z-0 h-72 w-72 -translate-x-1/2 rounded-full bg-yellow-400/10 blur-3xl" />
@@ -153,7 +153,7 @@ export default function LegacyShowcase() {
           BOTTOM SECTION TRANSITION
           ======================================== */}
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-32 bg-gradient-to-t from-slate-50 via-slate-50/70 to-transparent dark:from-slate-950 dark:via-slate-950/70" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-32 bg-gradient-to-t from-white via-white/70 to-transparent dark:from-slate-950 dark:via-slate-950/70" />
     </section>
   );
 }

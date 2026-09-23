@@ -26,7 +26,7 @@ export default function LegacyCard({ item }: Props) {
           hover:border-yellow-400
           hover:shadow-2xl
           dark:border-slate-800
-          dark:bg-slate-900
+          dark:bg-slate-950
 
           sm:min-h-[420px]
           sm:rounded-[2rem]

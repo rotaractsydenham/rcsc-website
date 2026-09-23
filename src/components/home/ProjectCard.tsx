@@ -31,7 +31,7 @@ export default function ProjectCard({ project }: Props) {
           hover:shadow-2xl
 
           dark:border-slate-800
-          dark:bg-slate-900
+          dark:bg-slate-950
 
           sm:h-[520px]
           sm:rounded-[2rem]

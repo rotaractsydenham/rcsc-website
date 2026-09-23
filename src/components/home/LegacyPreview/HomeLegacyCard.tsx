@@ -16,7 +16,7 @@ interface Props {
 
 export default function HomeLegacyCard({ year }: Props) {
   return (
-    <article className="group relative h-[680px] overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-xl dark:border-slate-800 dark:bg-slate-900 sm:h-[720px] lg:h-[520px] sm:rounded-[2rem]">
+    <article className="group relative h-[680px] overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-xl dark:border-slate-800 dark:bg-slate-950 sm:h-[720px] lg:h-[520px] sm:rounded-[2rem]">
       <div className="grid h-full lg:grid-cols-[0.95fr_1.05fr]">
 
         {/* Image */}
@@ -71,7 +71,7 @@ export default function HomeLegacyCard({ year }: Props) {
 <div className="mt-6 grid grid-cols-2 gap-2.5 sm:mt-8 sm:gap-4">
 
   {/* President */}
-  <div className="min-w-0 rounded-xl border border-slate-200 bg-slate-50 p-3.5 dark:border-slate-800 dark:bg-slate-950 sm:rounded-2xl sm:p-5">
+  <div className="min-w-0 rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm dark:border-slate-800 dark:bg-slate-950 sm:rounded-2xl sm:p-5">
     <div className="flex items-start gap-2.5 sm:gap-3">
 
       <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400/10 text-yellow-500 sm:h-10 sm:w-10">
@@ -92,7 +92,7 @@ export default function HomeLegacyCard({ year }: Props) {
   </div>
 
   {/* Secretary */}
-  <div className="min-w-0 rounded-xl border border-slate-200 bg-slate-50 p-3.5 dark:border-slate-800 dark:bg-slate-950 sm:rounded-2xl sm:p-5">
+  <div className="min-w-0 rounded-xl border border-slate-200 bg-white p-3.5 shadow-sm dark:border-slate-800 dark:bg-slate-950 sm:rounded-2xl sm:p-5">
     <div className="flex items-start gap-2.5 sm:gap-3">
 
       <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400/10 text-yellow-500 sm:h-10 sm:w-10">

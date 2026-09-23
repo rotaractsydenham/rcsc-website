@@ -17,7 +17,7 @@ export default function GalleryPreview() {
           TOP TRANSITION
       ===================================================== */}
 
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-slate-50 to-transparent dark:from-slate-900" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-white to-transparent dark:from-slate-950" />
 
       {/* Ambient glow */}
       <div className="pointer-events-none absolute -left-40 top-1/3 h-72 w-72 rounded-full bg-yellow-400/5 blur-[100px]" />
@@ -454,7 +454,7 @@ export default function GalleryPreview() {
           BOTTOM TRANSITION
       ===================================================== */}
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-50 to-transparent dark:from-slate-950" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent dark:from-slate-950" />
 
     </section>
   );
