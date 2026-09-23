@@ -13,7 +13,7 @@ export const club = {
 
   parentClub: "Rotary Club of Bombay",
 
-  website: "https://rotaractsydenham.in",
+  website: "https://www.rotaractsydenham.in",
 
   email: "rotaract.sydenham@gmail.com",
 

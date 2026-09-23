@@ -1,11 +1,11 @@
 export const social = {
   instagram: "https://instagram.com/rotaract.sydenham",
 
-  linkedin: "",
+  linkedin: "https://linkedin.com/company/rotaract-sydenham",
 
-  facebook: "",
+  facebook: "https://facebook.com/rotaract.sydenham",
 
-  youtube: "",
+  youtube: "https://youtube.com/@rotaractsydenham",
 
-  email: "info@rotaractsydenham.in",
+  email: "rotaract.sydenham@gmail.com",
 };

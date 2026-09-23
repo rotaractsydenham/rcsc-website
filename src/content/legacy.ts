@@ -21,7 +21,7 @@ export const legacy: LegacyYear[] = [
     year: "2020–21",
     theme: "Mumbai Meri Jaan",
 
-    president: "TBA",
+    president: "Rtr.Yash Babrekar",
     secretary: "TBA",
 
     coverImage: "/images/legacy/2020.jpg",
@@ -55,7 +55,7 @@ export const legacy: LegacyYear[] = [
     year: "2021–22",
     theme: "Rise Together",
 
-    president: "TBA",
+    president: "Rtr. Deepaksha Khetawat",
     secretary: "TBA",
 
     coverImage: "/images/legacy/2021.jpg",
@@ -77,7 +77,7 @@ export const legacy: LegacyYear[] = [
     year: "2022–23",
     theme: "Ignite",
 
-    president: "TBA",
+    president: "Rtr. Palash Wadekar",
     secretary: "TBA",
 
     coverImage: "/images/legacy/2022.jpg",
@@ -99,8 +99,8 @@ export const legacy: LegacyYear[] = [
     year: "2023–24",
     theme: "Celestia",
 
-    president: "TBA",
-    secretary: "TBA",
+    president: "Rtr. Sneha Acharya",
+    secretary: "Rtr. Sakshi Waykar",
 
     coverImage: "/images/legacy/2023.jpg",
 
@@ -122,7 +122,7 @@ export const legacy: LegacyYear[] = [
     theme: "Panchtatva",
 
     president: "Rtr. Suyash Save",
-    secretary: "TBA",
+    secretary: "Rtr. Pranav Bohra",
 
     coverImage: "/images/legacy/2024.jpg",
 
@@ -156,7 +156,7 @@ export const legacy: LegacyYear[] = [
     theme: "Wings of Fire",
 
     president: "Rtr. Trissha Desai",
-    secretary: "TBA",
+    secretary: "Rtr. Himanshu Bakrania",
 
     coverImage: "/images/legacy/2025.jpg",
 
