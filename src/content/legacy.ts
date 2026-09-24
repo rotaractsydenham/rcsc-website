@@ -75,7 +75,7 @@ export const legacy: LegacyYear[] = [
     id: 3,
     slug: "2022-23",
     year: "2022–23",
-    theme: "Ignite",
+    theme: "Change",
 
     president: "Rtr. Palash Wadekar",
     secretary: "TBA",

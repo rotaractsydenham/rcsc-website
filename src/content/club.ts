@@ -7,7 +7,7 @@ export const club = {
 
   charterYear: 2020,
 
-  charterDate: "18 September 2020",
+  charterDate: "1 September 2020",
 
   district: "Rotary International District 3141",
 

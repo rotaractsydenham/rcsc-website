@@ -62,7 +62,7 @@ export const faqs = [
   {
     question: "Is there a membership fee?",
     answer:
-      "Yes. The annual fee is announced every Rotary year and covers RI dues and club administration.",
+      "Yes. The annual fee is announced every Rotary year and covers RI dues and club administration and Merchandise.",
   },
   {
     question: "Can first-year students join?",

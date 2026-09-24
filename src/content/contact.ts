@@ -3,7 +3,7 @@ export const contact = {
 
   phone: "+91 XXXXXXXXXX",
 
-  website: "https://rotaractsydenham.in",
+  website: "https://www.rotaractsydenham.in",
 
   address: [
     "Sydenham College of Commerce & Economics",

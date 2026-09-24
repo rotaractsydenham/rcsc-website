@@ -24,7 +24,7 @@ export const highlightEvents: HighlightEvent[] = [
     description:
       "Official Installation Ceremony of the Board of Directors.",
     featured: true,
-    status: "Upcoming",
+    status: "Completed",
     registrationLink: "#",
   },
 
