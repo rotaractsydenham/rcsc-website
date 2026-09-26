@@ -40,6 +40,6 @@ export const highlightEvents: HighlightEvent[] = [
       "Official Installation Ceremony of the Board of Directors and team.",
     featured: false,
     status: "Completed",
-    registrationLink: "google.com",
+    registrationLink: "docs.google.com",
   },
 ];
