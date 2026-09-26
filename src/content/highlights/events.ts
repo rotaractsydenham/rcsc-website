@@ -20,7 +20,7 @@ export const highlightEvents: HighlightEvent[] = [
     date: "21 September 2026",
     time: "2:00 PM",
     venue: "Sydenham College room No.39",
-    image: "/images/highlights/events/installation2026.jpg",
+    image: "/images/highlights/events/installation-2026.jpg",
     description:
       "Official Installation Ceremony of the Board of Directors.",
     featured: true,
