@@ -53,7 +53,7 @@ export const legacy: LegacyYear[] = [
     id: 2,
     slug: "2021-22",
     year: "2021–22",
-    theme: "Rise Together",
+    theme: "Challenges are Opportunities",
 
     president: "Rtr. Deepaksha Khetawat",
     secretary: "Rtr. Palash Wadekar",
@@ -75,7 +75,7 @@ export const legacy: LegacyYear[] = [
     id: 3,
     slug: "2022-23",
     year: "2022–23",
-    theme: "Change",
+    theme: "Changing the Perception",
 
     president: "Rtr. Palash Wadekar",
     secretary: "Rtr. Vedant Dukle",
@@ -97,7 +97,7 @@ export const legacy: LegacyYear[] = [
     id: 4,
     slug: "2023-24",
     year: "2023–24",
-    theme: "Celestia",
+    theme: "Celestia: Beyond the Horizon",
 
     president: "Rtr. Sneha Acharya",
     secretary: "Rtr. Sakshi Waykar",
@@ -119,7 +119,7 @@ export const legacy: LegacyYear[] = [
     id: 5,
     slug: "2024-25",
     year: "2024–25",
-    theme: "Panchtatva",
+    theme: "Panchtatva: Balance within and around us",
 
     president: "Rtr. Suyash Save",
     secretary: "Rtr. Pranav Bohra",
