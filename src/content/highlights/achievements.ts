@@ -16,7 +16,7 @@ export const achievements: Achievement[] = [
     date: "2025–26",
     description:
       "Recognised by RID 3141 for consistent participation, impactful initiatives and active contribution towards the Rotaract movement throughout the year.",
-    image: "/images/achievements/upcoming-club.jpg",
+    image: "/images/highlights/achievements/upcoming-club.jpg",
     featured: true,
   },
   {
