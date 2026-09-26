@@ -34,16 +34,16 @@ export const projects: Project[] = [
 
   {
     id: 2,
-    title: "Shining Paws",
-    slug: "shining-paws",
+    title: "Blood Donation Drive",
+    slug: "blood-donation-drive",
     avenue: "Community Service",
-    image: "/images/projects/shining-paws.jpg",
+    image: "/images/projects/blood-donationDrive.jpg",
     shortDescription:
-      "Reflective collars for street dogs to improve road safety.",
+      "Organizing blood donation drives in collaboration with NSS Unit of Sydenham College.",
     fullDescription:
-      "Shining Paws is a community service project aimed at improving the safety of street dogs by providing them with reflective collars. These collars make the dogs more visible to drivers at night, reducing the risk of accidents and promoting a safer environment for both animals and humans.",
-    date: "3 January 2025",
-    beneficiaries: "16 Dogs",
+      "The Blood Donation Drive (with NSS) is a community service initiative that aims to promote blood donation and save lives. In collaboration with the National Service Scheme (NSS), we organize regular blood donation camps to ensure a steady supply of blood for those in need.",
+    date: "January 2026",
+    beneficiaries: "40+ Donors",
     featured: true,
 
     status: "Completed",
