@@ -22,7 +22,7 @@ export const legacy: LegacyYear[] = [
     theme: "Mumbai Meri Jaan",
 
     president: "Rtr.Yash Babrekar",
-    secretary: "TBA",
+    secretary: "Rtr. Sakshi Chavan",
 
     coverImage: "/images/legacy/2020.jpg",
 
@@ -56,7 +56,7 @@ export const legacy: LegacyYear[] = [
     theme: "Rise Together",
 
     president: "Rtr. Deepaksha Khetawat",
-    secretary: "TBA",
+    secretary: "Rtr. Palash Wadekar",
 
     coverImage: "/images/legacy/2021.jpg",
 
@@ -78,7 +78,7 @@ export const legacy: LegacyYear[] = [
     theme: "Change",
 
     president: "Rtr. Palash Wadekar",
-    secretary: "TBA",
+    secretary: "Rtr. Vedant Dukle",
 
     coverImage: "/images/legacy/2022.jpg",
 

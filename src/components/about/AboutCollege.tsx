@@ -19,7 +19,7 @@ export default function AboutCollege() {
         </div>
         <div className="order-1 lg:order-2">
           <div className="mb-5 flex items-center gap-4"><span className="h-[2px] w-12 rounded-full bg-yellow-400" /><span className="text-xs font-extrabold uppercase tracking-[0.4em] text-yellow-500 sm:text-sm">Sydenham College</span></div>
-          <h2 className="max-w-2xl text-4xl font-black leading-[1.05] sm:text-5xl lg:text-6xl">A Legacy of Excellence Since 1913</h2>
+          <h2 className="max-w-2xl text-4xl font-black leading-[1.05] sm:text-5xl lg:text-6xl">A Legacy of Excellence</h2>
           <p className="mt-7 text-base leading-8 text-slate-600 dark:text-slate-300 sm:text-lg">Established in <strong>1913</strong>, Sydenham College of Commerce and Economics is one of India's oldest and most prestigious commerce institutions. For over a century, it has nurtured generations of entrepreneurs, professionals, public servants and business leaders, creating a tradition of academic excellence and leadership.</p>
           <p className="mt-5 text-base leading-8 text-slate-600 dark:text-slate-300 sm:text-lg">Situated in the heart of Mumbai, the college offers an environment where innovation, culture and service thrive together. The Rotaract Club proudly continues this legacy by empowering students to lead meaningful projects and create lasting social impact.</p>
           <div className="mt-9 grid gap-3 sm:grid-cols-2">

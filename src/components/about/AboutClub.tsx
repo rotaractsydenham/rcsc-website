@@ -20,7 +20,8 @@ export default function AboutClub() {
         </div>
         <div className="relative">
           <div className="absolute -bottom-5 -left-5 h-32 w-32 rounded-full bg-yellow-400/20 blur-3xl" />
-          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-2"><Image src="/images/about/rcsc.jpg" alt="Rotaract Club of Sydenham College" width={900} height={700} className="aspect-[4/3] w-full rounded-[1.6rem] object-cover" /></div>
+          <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-2">
+          <Image src="/images/about/rcsc.jpg" alt="Rotaract Club of Sydenham College" width={900} height={700} className="aspect-[4/3] w-full rounded-[1.6rem] object-cover" /></div>
           <div className="absolute bottom-5 left-5 flex items-center gap-3 rounded-2xl border border-white/10 bg-slate-950/90 px-4 py-3 backdrop-blur-md"><div className="flex h-10 w-10 items-center justify-center rounded-xl bg-yellow-400 text-slate-900"><Users size={20} /></div><div><p className="text-xs uppercase tracking-[0.15em] text-slate-400">Since</p><p className="font-black">2020</p></div></div>
         </div>
       </div>
